@@ -28,13 +28,15 @@ nav, footer {
     display: flex;
     flex-direction: row;
     align-content: center;
-
+    height: 10vh;
+    text-align: center;
 }
 
 li{
-    list-style-type: none;
+    list-style: none;
     display: inline-block;
     justify-content: center;
+
 
 }
 
