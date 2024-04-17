@@ -73,3 +73,25 @@ li{
     flex-wrap: wrap;
     flex-direction: row;
     }
+
+    article{
+        background-color: white;
+          padding: 15px 30px;
+          border-radius: 10px;
+          margin: 20px;
+          max-width: 300px;
+          text-align: center;
+      }
+      
+      .Precio{
+          font-size: 18px;
+          font-weight: 300;
+      }
+      button{
+          border-color: none;
+          background-color: black;
+          color: white;
+          padding: 15px 10px;
+          text-decoration: none;
+      
+      }
