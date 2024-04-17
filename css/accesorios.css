@@ -4,7 +4,9 @@
     padding: 0;
    box-sizing: 100%;
 }
-
+body{
+    background-color: rgba(227, 227, 227, 0.805)
+}
 .logo-container{
     width: 80px;
     height: 80px;
@@ -29,7 +31,7 @@
 
 nav, footer{
     list-style: none;
-    background-color: rgb(192, 197, 197);
+    background-color:  rgb(172, 177, 179);
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -38,6 +40,7 @@ nav, footer{
     align-content: center;
     height: 10vh;
    text-align: center;
+    
 }
 
 li{
@@ -50,12 +53,12 @@ li{
 .nav{
     text-decoration: none;
     color: #fff;
-    background-color: rgb(75, 110, 170);
+    background-color: rgb(121, 117, 117);
     padding: 12px 20px;
     border-radius: 5px;
     width: 100px;
     display: inline-block;
-    background-color: rgb(84, 45, 8);
+    background-color: 79, 76, 73
 }
 
 .im{

@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
    box-sizing: 100%;
-   background-color: rgb(192, 197, 197);
 }
-
+body{
+    background-color: rgba(227, 227, 227, 0.805)
+}
 .titulo{
     display: flex;
     justify-content: space-around;
@@ -18,7 +19,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top: 30px;
 }
 
 .logo{
@@ -31,7 +32,7 @@
 
 nav, footer{
     list-style: none;
-    background-color: rgb(192, 197, 197);
+    background-color:  rgb(172, 177, 179);
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -41,8 +42,9 @@ nav, footer{
     height: 10vh;
    text-align: center;
 }
-
-
+footer{
+    margin-top: 250px;
+}
 li{
     text-decoration: none;
     display: inline-block;
@@ -52,12 +54,12 @@ li{
 .nav{
     text-decoration: none;
     color: #fff;
-    background-color: rgb(75, 110, 170);
+    background-color: rgb(121, 117, 117);
     padding: 12px 20px;
     border-radius: 5px;
     width: 100px;
     display: inline-block;
-    background-color: rgb(84, 45, 8);
+    background-color: 79, 76, 73
 }
 
 .im{
@@ -73,3 +75,16 @@ li{
     flex-wrap: wrap;
     flex-direction: row;
     }
+
+label{
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 10vh;
+   text-align: center;
+   margin-top: 70px;
+}
