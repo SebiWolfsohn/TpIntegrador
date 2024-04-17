@@ -2,21 +2,24 @@
     box-sizing: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(192, 197, 197);
+    background-color: rgb(192, 197, 197);;
+   
 }
-.Logo{
-    max-width: 400px;
-    justify-content: space-around;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    align-self: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 300px;
-    margin-right: 300px;
 
+.logo-container{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
 }
 
 nav, footer {
@@ -32,11 +35,11 @@ nav, footer {
     text-align: center;
 }
 
+
 li{
     list-style: none;
     display: inline-block;
     justify-content: center;
-
 
 }
 
