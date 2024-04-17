@@ -63,15 +63,10 @@ li{
     height: 200px;
     object-fit: cover;
 }
-.Precio{
-    font-size: 18px;
-    font-weight: 300;
-}
-button{
-    border-color: none;
-    background-color: black;
-    color: white;
-    padding: 15px 10px;
-    text-decoration: none;
-
-}
+.container-items{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    }
