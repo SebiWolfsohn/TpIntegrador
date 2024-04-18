@@ -3,14 +3,17 @@
     padding: 0;
    box-sizing: 100%;
 }
+
 body{
     background-color: rgba(227, 227, 227, 0.805)
 }
+
 .titulo{
     display: flex;
     justify-content: space-around;
-    padding: 30px 0 40px 0;
+    padding: 20px 0 10px 0;
 }
+
 .logo-container{
     width: 80px;
     height: 80px;
@@ -19,14 +22,12 @@ body{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 .logo{
     max-width: 100%;
     max-height: 100%;
     border-radius: 50%;
-    
 }
 
 
@@ -71,6 +72,28 @@ li{
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
-    flex-wrap: wrap;
-    flex-direction: row;
-    }
+   flex-direction: row;
+
+}
+
+article{
+  background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.Precio{
+    font-size: 18px;
+    font-weight: 300;
+}
+button{
+    border-color: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    text-decoration: none;
+
+}
