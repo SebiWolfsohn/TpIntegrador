@@ -19,7 +19,7 @@ body{
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top: 30px;
 }
 
 .logo{
@@ -28,7 +28,10 @@ body{
     border-radius: 50%;
     
 }
-
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
 
 nav{
     list-style: none;
@@ -67,6 +70,25 @@ li{
     object-fit: cover;
 }
 
+label{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 10vh;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+p{
+    margin-top: 15px;
+
+}
+
 .container-items{
     display: flex;
     flex-wrap: wrap; 
@@ -80,8 +102,12 @@ li{
         color: #fff;
         text-decoration: none;
         padding: 20px 42px;
+<<<<<<< HEAD
         
       
+=======
+        margin-top: 150px;
+>>>>>>> 94c8113fa9efa9aa3017cc70b4cd1232f1bdb7f9
         
     }
     .footer-container{
@@ -91,3 +117,4 @@ li{
         flex-wrap: wrap;
        
     }
+
