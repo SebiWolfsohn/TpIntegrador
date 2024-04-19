@@ -31,7 +31,7 @@ body{
 }
 
 
-nav, footer{
+nav{
     list-style: none;
     background-color:  rgb(172, 177, 179);
     align-items: center;
@@ -111,4 +111,20 @@ li{
    text-align: center;
    border-top: grey;
    border-bottom: grey;
+    }
+
+    footer{
+        background-color:rgb(172, 177, 179);
+        color: #fff;
+        text-decoration: none;
+        padding: 20px 42px;
+      
+        
+    }
+    .footer-container{
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        flex-wrap: wrap;
+       
     }
