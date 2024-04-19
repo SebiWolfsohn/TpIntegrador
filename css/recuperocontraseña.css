@@ -96,18 +96,14 @@ p{
     flex-wrap: wrap;
     flex-direction: row;
     }
-
     footer{
         background-color:rgb(172, 177, 179);
         color: #fff;
         text-decoration: none;
         padding: 20px 42px;
-<<<<<<< HEAD
-        
-      
-=======
-        margin-top: 150px;
->>>>>>> 94c8113fa9efa9aa3017cc70b4cd1232f1bdb7f9
+        position: fixed;
+        bottom: 0;
+        width: 100%;
         
     }
     .footer-container{
