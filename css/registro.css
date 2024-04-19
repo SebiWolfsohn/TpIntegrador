@@ -44,9 +44,7 @@ nav{
     height: 10vh;
    text-align: center;
 }
-footer{
-    margin-top: 200px;
-}
+
 li{
     text-decoration: none;
     display: inline-block;
@@ -100,6 +98,8 @@ footer{
     color: #fff;
     text-decoration: none;
     padding: 20px 42px;
+    margin-top: 200px;
+  
   
     
 }

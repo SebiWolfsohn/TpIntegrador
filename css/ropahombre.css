@@ -33,6 +33,10 @@ body{
     
 }
 
+p{
+    margin-top: 15px;
+}
+
 
 nav{
     list-style: none;

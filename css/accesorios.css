@@ -31,7 +31,9 @@ body{
     max-height: 100%;
     border-radius: 50%;
 }
-
+p{
+    margin-top: 15px;
+}
 
 nav{
     list-style: none;

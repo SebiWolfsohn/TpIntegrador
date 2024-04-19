@@ -108,6 +108,9 @@ footer{
   
     
 }
+p{
+    margin-top: 15px;
+}
 .footer-container{
     display: flex;
     justify-content: space-between; 

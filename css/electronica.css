@@ -45,7 +45,9 @@ nav{
     height: 10vh;
    text-align: center;
 }
-
+p{
+    margin-top: 15px;
+}
 
 li{
     text-decoration: none;
