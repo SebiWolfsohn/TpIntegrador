@@ -97,3 +97,8 @@ button{
     text-decoration: none;
 
 }
+
+.footer-container{
+display: flex;
+justify-content: space-between;
+}
