@@ -74,7 +74,6 @@ p{
     display: flex;
     flex-wrap: wrap; 
     justify-content: space-around;
-    flex-wrap: wrap;
     flex-direction: row;
   
     }
@@ -83,7 +82,7 @@ p{
         background-color: white;
         padding: 15px 30px;
         border-radius: 10px;
-        margin: 20px;
+        margin: 20px ;
         max-width: 300px;
         text-align: center;
     }
@@ -105,7 +104,7 @@ p{
 
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 1px;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -113,6 +112,9 @@ p{
    text-align: center;
    border-top: grey;
    border-bottom: grey;
+   width: 100%;
+   background-color: rgb(172, 177, 179);
+   margin-top: 10px;
     }
 
     footer{
