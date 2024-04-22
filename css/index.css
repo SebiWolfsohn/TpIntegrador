@@ -100,7 +100,7 @@ p{
         text-decoration: none;
     }
     
-    h2{
+    .send{
 
     align-items: center;
     justify-content: center;
@@ -131,4 +131,7 @@ p{
         align-items: flex-start; 
         flex-wrap: wrap;
        
+    }
+    .hola{
+        margin-top: 15px;
     }
