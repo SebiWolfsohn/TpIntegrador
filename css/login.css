@@ -115,13 +115,13 @@ button{
         flex-wrap: wrap;
        
     }
+
     @media (max-width: 420px) {
         .nav {
-            padding: 5px 8px;
-             margin: 5px;
-             border-radius: 5px;
-             width: 70px;
+           padding: 5px 8px;
+            margin: 5px;
+            border-radius: 5px;
+            width: 70px;
+        }
     
-         }
-           
     }
