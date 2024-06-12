@@ -21,7 +21,6 @@ console.log("id container-items", categoria);
        html += `<article>
             <h3>${element.title}</h3>
             <img src="${element.image}" class="im">
-            <h4>${element.category}</h4>
             <p>${element.description}</p>
             <p class="Precio">$${element.price}</p>
             <button>Añadir al carrito</button>

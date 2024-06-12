@@ -9,15 +9,16 @@ fetch(url)
 })
 .then(function(data) {
     let producto = document.querySelector('.container-items');
+    let element = data
     producto.innerHTML = `<article>
-            <h3>${data.title}</h3>
-            <img src="${data.image}" class="im">
-            <h4>${data.category}</h4>
-            <p>${data.description}</p>
-            <p class="Precio">$${data.price}</p>
+            <h3>${element.title}</h3>
+            <img src="${element.image}" class="im">
+            <a href="./categoria.html?categoria=${element.category}" class="nav">${element.category}</a>
+            <p>${element.description}</p>
+            <p class="Precio">$${element.price}</p>
             <button>Añadir al carrito</button>
         </article>`;
-  console.log(data);
+  console.log(element);
 })
 .catch(function(error) {
   console.log("Error: " + error);

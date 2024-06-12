@@ -19,12 +19,12 @@
        html += `<article>
             <h3>${element.title}</h3>
             <img src="${element.image}" class="im">
-            <h4>${element.category}</h4>
+            <a href="./categoria.html?categoria=${element.category}" class="nav">${element.category}</a>
             <p>${element.description}</p>
             <p class="Precio">$${element.price}</p>
             <button>Añadir al carrito</button>
             <div class="not">
-                <a href="./producto.html?id=${element.id}" class="nav">Detalle de producto</a>
+              <a href="./producto.html?id=${element.id}" class="nav">Detalle de producto</a>
             </div>
         </article>`;
       }
