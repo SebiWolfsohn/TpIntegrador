@@ -3,10 +3,6 @@
 //let id = queryStringToObject.get('id');
 //console.log("id container-items", id);
 
-//fetch('https://fakestoreapi.com/products')
- //           .then(res=>res.json())
-  //          .then(json=>console.log(json))
-
   let url = 'https://fakestoreapi.com/products';
   fetch(url)
     .then(function(response) {
@@ -20,13 +16,16 @@
       for (let i = 0; i < data.length; i++) {
         const element = data[i];
         // Aquí puedes añadir el código para procesar cada elemento y agregarlo a celular
-       html += `<article class="Iphone15promax">
+       html += `<article>
             <h3>${element.title}</h3>
             <img src="${element.image}" class="im">
             <h4>${element.category}</h4>
             <p>${element.description}</p>
             <p class="Precio">$${element.price}</p>
             <button>Añadir al carrito</button>
+            <div class="not">
+                <a href="./producto.html?id=${element.id}" class="nav">Detalle de producto</a>
+            </div>
         </article>`;
       }
       
