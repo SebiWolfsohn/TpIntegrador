@@ -23,3 +23,14 @@ fetch(url)
   .catch(function (error) {
     console.log("Error: " + error);
   })
+
+
+// NO SE SI ESTA BIEN ESTO, REVISTAR. es lo de agregar al carrito el producto
+let carrito = localStorage.getItem('carrito');
+console.log(carrito);
+let carritoParseado = JSON.parse(carrito);
+for (let i = 0; i < carritoParseado.length; i++) {
+  console.log = (carritoParseado[i]);
+  
+}
+
