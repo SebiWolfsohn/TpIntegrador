@@ -3,7 +3,7 @@
 //let id = queryStringToObject.get('id');
 //console.log("id container-items", id);
 
-  let url = 'https://fakestoreapi.com/products';
+  let url = 'https://fakestoreapi.com/products/category/electronics';
   fetch(url)
     .then(function(response) {
       return response.json();
