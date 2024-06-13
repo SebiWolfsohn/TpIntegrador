@@ -16,8 +16,13 @@ fetch(url)
             <a href="./categoria.html?categoria=${element.category}" class="nav">${element.category}</a>
             <p>${element.description}</p>
             <p class="Precio">$${element.price}</p>
-            <button>Añadir al carrito</button>
+            <button id="addCarrito">Añadir al carrito</button>
         </article>`;
+    console.log(element);
+  })
+
+  document.getproducto("addCarrito").addEventListener("click", function() {
+    addToCart(element);
     console.log(element);
   })
   .catch(function (error) {
@@ -26,11 +31,20 @@ fetch(url)
 
 
 // NO SE SI ESTA BIEN ESTO, REVISTAR. es lo de agregar al carrito el producto
+let agregar = [addCarrito];
+let agregarJson=JSON.stringify(agregar);
+console.log(agregar);
+console.log(agregarJson);
+
+localStorage.setItem('agregar', JSON.stringify(agregarJson))
+
 let carrito = localStorage.getItem('carrito');
+agregar.push(carrito);
 console.log(carrito);
+
 let carritoParseado = JSON.parse(carrito);
 for (let i = 0; i < carritoParseado.length; i++) {
   console.log = (carritoParseado[i]);
-  
 }
+
 
