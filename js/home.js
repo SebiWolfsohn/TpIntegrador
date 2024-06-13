@@ -1,7 +1,3 @@
-//let queryString = location.search
-//let queryStringToObject = new URLSearchParams(queryString);
-//let id = queryStringToObject.get('id');
-//console.log("id container-items", id);
 
 let url = 'https://fakestoreapi.com/products';
 fetch(url)
