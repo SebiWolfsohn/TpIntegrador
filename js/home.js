@@ -15,7 +15,7 @@ fetch(url)
     // Iterar sobre los datos recibidos
     for (let i = 0; i < data.length; i++) {
       const element = data[i];
-      // Aquí puedes añadir el código para procesar cada elemento y agregarlo a celular
+      // Aca agregar el código para procesar cada elemento y agregarlo a celular
       html += `<article>
             <h3>${element.title}</h3>
             <img src="${element.image}" class="im">
