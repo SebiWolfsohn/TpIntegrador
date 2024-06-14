@@ -12,19 +12,19 @@ fetch(url)
   })
   .then(function (data) {
     let productos = document.querySelector('.container-items')
-    let html = '';
+    let articulo = '';
 
     // Iterar sobre los datos recibidos
     for (let i = 0; i < data.length; i++) {
       const element = data[i];
       // Usamos Template strings
-      html += `<article>
+      articulo += `<article>
             <h3>${element.title}</h3>
             <img src="${element.image}" class="im">
             <p>${element.description}</p>
             <p class="Precio">$${element.price}</p>
             <div class="not">
-                <a href="./producto.html?id=${element.id}" class="nav">Detalle de producto</a>
+            <a href="./producto.html?id=${element.id}" class="nav">Detalle de producto</a>
             </div>
         </article>`;
     }
