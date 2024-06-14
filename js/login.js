@@ -1,7 +1,7 @@
 let form = document.querySelector('form');
-let email = document.querySelector('#email');
-let password = document.querySelector('#password');
-let erroremail = document.querySelector('.invalid-feedback.email');
+let email = document.querySelector('.email');
+let password = document.querySelector('.mensaje-contraseña');
+let erroremail = document.querySelector('.mensaje-email');
 let errorpassword = document.querySelector('.invalid-feedback.password');
 let user = {}
 
@@ -18,7 +18,7 @@ form.addEventListener('submit', function (e){
        user.email = email.value;
        user.password = password.value;
        localStorage.setItem('user', JSON.stringify(user))
-       this.submit();
+   this.submit();
    }
 }
 )  
