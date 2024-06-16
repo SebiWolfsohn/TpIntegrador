@@ -16,8 +16,11 @@ form.addEventListener('submit', function (e){
     if (email.value == '' || email.value.length < 5){
         erroremail.innerText = 'Completar este campo'
         erroremail.style.display = 'block';
-    } else if (password.value == '' || password.value.length < 3){
+    } else if (password.value == ''){
         errorpassword.innerText = 'Completar este campo'
+        errorpassword.style.display = 'block';
+    } else if (password.value == '' || password.value.length < 6){
+        errorpassword.innerText = 'Debe ingresar al menos 6 caracteres'
         errorpassword.style.display = 'block';
     } else if (rePassword.value == '' || rePassword.value.length < 3){
         errorrePassword.innerText = 'Completar este campo'
