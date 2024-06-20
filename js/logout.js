@@ -1,34 +1,18 @@
+let logout = document.querySelector('logout');
+let bienvenido = document.querySelector('bienvenido');
+let usuarioEmail = document.querySelector('usuarioEmail');
+let login = document.querySelector('login');
+let registro = document.querySelector('registro');
 
+function logoutFuncion() {
+    localStorage.removeItem('usuarioEmail')
+    bienvenido.style.display = 'none'; 
+    logout.style.display = 'none';
+    login.style.display = 'block';
+    registro.style.display = 'block';
+    login.style.display = 'block';
+    registro.style.display = 'block';
 
-user.email = email.value;
-user.password = password.value;
-localStorage.removeItem('user', JSON.stringify(user))
-let user = {}
+}
 
-
-document.noMostrarId('bienvenido')
-document.noMostrarId('logout')
-
-document.mostrarId('login')
-document.mostrarId('registro')
-
-this.submit();
-
-document.AddId('logout').addEventListener('click', logout);
- 
-
-document.addEventListener('click', function() {
-    const user = localStorage.getItem('user');
-    if (user) {
-        document.AddId('bienvenido')
-        document.AddId('usuarioEmail')
-        document.AddId('logout')
-        document.AddId('login')
-        document.AddId('registro')
-    } else {
-        document.AddId('bienvenido')
-        document.AddId('logout')
-        document.AddId('login')
-        document.AddId('registro')
-    }
-})
+logout.addEventListener('click', logout)
