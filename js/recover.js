@@ -14,7 +14,7 @@ form.addEventListener('submit', function (e){
         erroremail.innerText = 'Porfavor escriba su mail'
         erroremail.style.display = 'block';
     } else if (checkbox.value == '' || checkbox.value){
-        errorcheckbox.innerText = 'Por favor acepte el campo Quiero recuperar mi contraseña'
+        errorcheckbox.innerHTML = 'Por favor acepte el campo Quiero recuperar mi contraseña'
         errorcheckbox.style.display = 'block';
     } else if (forms.value){
         forms.innerHTML = 'Recibirás un email con las instrucciones para recuperar tu contraseña'
