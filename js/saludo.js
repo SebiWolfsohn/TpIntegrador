@@ -11,7 +11,7 @@ document.addEventListener('DOM', function() {
     let saludoElement = saludar
     let logoutLink = salir
     logoutLink.href = document.querySelector('.logout');
-   // logoutLink.textContent =  document.querySelector('.logout');
+    logoutLink.textContent =  document.querySelector('.logout');
 
     // Función para manejar el logout
     function Logoutfunction() {

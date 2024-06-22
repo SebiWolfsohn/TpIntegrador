@@ -28,8 +28,6 @@ fetch(url)
             </div>
         </article>`;
     }
-
-    // Asignar el contenido generado a la sección HTML correspondiente
     productos.innerHTML = html;
     console.log(data);
   })
