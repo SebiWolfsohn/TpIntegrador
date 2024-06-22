@@ -16,14 +16,17 @@ fetch(url)
             <a href="./categoria.html?categoria=${element.category}" class="nav">${element.category}</a>
             <p>${element.description}</p>
             <p class="Precio">$${element.price}</p>
-            <button id="addCarrito">Añadir al carrito</button>
+            <a class="btn" href="./cart.html">Añadir al carrito</a>
         </article>`;
     console.log(element);
   })
+  document.getElementById("addCarrito").addEventListener("click", redirect);{
+    function redirect(){ window.location.href = 'cart.html'; }
+  }
 
   document.getproducto("addCarrito").addEventListener("click", function() {
-    addToCart(element);
-    console.log(element);
+   addToCart(element);
+  //  console.log(element);
   })
   .catch(function (error) {
     console.log("Error: " + error);

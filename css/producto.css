@@ -95,13 +95,12 @@ article{
     font-size: 18px;
     font-weight: 300;
 }
-button{
+.btn{
     border-color: none;
     background-color: black;
     color: white;
     padding: 15px 10px;
     text-decoration: none;
-
 }
 
 footer{
