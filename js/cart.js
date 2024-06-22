@@ -41,5 +41,6 @@ let carrito = () => {
 let compraFinalizada = () => {
     localStorage.removeItem('cart');
     alert('Gracias por su compra!')
+    window.location.href = 'index.html';
 }
 
