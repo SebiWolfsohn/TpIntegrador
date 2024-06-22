@@ -30,21 +30,6 @@ fetch(url)
   })
 
 
-// NO SE SI ESTA BIEN ESTO, REVISTAR. es lo de agregar al carrito el producto
-let agregar = [addCarrito];
-let agregarJson=JSON.stringify(agregar);
-console.log(agregar);
-console.log(agregarJson);
 
-localStorage.setItem('agregar', JSON.stringify(agregarJson))
-
-let carrito = localStorage.getItem('carrito');
-agregar.push(carrito);
-console.log(carrito);
-
-let carritoParseado = JSON.parse(carrito);
-for (let i = 0; i < carritoParseado.length; i++) {
-  console.log = (carritoParseado[i]);
-}
 
 
