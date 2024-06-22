@@ -47,6 +47,8 @@ nav{
 }
 
 
+
+
 li{
     text-decoration: none;
     display: inline-block;
@@ -70,6 +72,13 @@ li{
     object-fit: cover;
 }
 
+#forms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 label{
     align-items: center;
     justify-content: center;
@@ -77,16 +86,15 @@ label{
     display: flex;
     flex-direction: column;
     align-content: center;
-    height: 10vh;
+    height: 5vh;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
 }
+
 
 
 p{
     margin-top: 15px;
-
 }
 
 button{
