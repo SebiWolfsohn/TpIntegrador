@@ -1,5 +1,6 @@
-let erroremail = document.querySelector('mensajeEmail');
-let errorcheckbox = document.querySelector('mensajeCheckbox');
+let erroremail = document.querySelector('.mensajeEmail');
+let errorcheckbox = document.querySelector('.mensajeCheckbox');
+let errorForms = document.querySelector('.errorForms')
 let form = document.querySelector('#forms');
 let user = {}
 
@@ -16,7 +17,7 @@ form.addEventListener('submit', function (e){
     } else if (checkbox.value == '' || checkbox.value){
         errorcheckbox.innerHTML = 'Por favor acepte el campo Quiero recuperar mi contraseña'
         errorcheckbox.style.display = 'block';
-    } else if (forms.value){
+    } else if (!forms.value){
         forms.innerHTML = 'Recibirás un email con las instrucciones para recuperar tu contraseña'
         errorForms.style.display = 'block';
     } else {
@@ -27,4 +28,3 @@ form.addEventListener('submit', function (e){
     }
 }
 )
- 
