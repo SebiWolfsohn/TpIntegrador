@@ -1,5 +1,5 @@
 // Obtener el email del usuario desde el local storage
-let userEmail = localStorage.getItem('userEmail');
+let user = localStorage.getItem('user');
 
 // Obtener elementos del DOM
 let header = document.querySelector('.header');
@@ -9,13 +9,12 @@ let registernav = document.querySelector('#register');
 
 // Crear elementos de saludo y logout
 let saludoElement = document.createElement('span');
-let logoutLink = document.createElement('a');
-logoutLink.href = 'file:///C:/Users/Lenovo/Desktop/programacionudesa-digitalhouse/github/Tpintegrador/js/logout.js'; 
+let logoutLink = document.createElement('button');
 logoutLink.textContent = 'Logout';
 
 // Función para manejar el logout
 function logoutFunction() {
-  localStorage.removeItem('userEmail');
+  localStorage.removeItem('user');
   saludoElement.style.display = 'none';
   logoutLink.style.display = 'none';
   if (loginnav) loginnav.style.display = 'block';
@@ -28,8 +27,9 @@ logoutLink.addEventListener('click', function(event) {
   logoutFunction();
 });
 
-if (userEmail) {
-  saludoElement.textContent = `Bienvenido: ${userEmail}`;
+if (user) {
+  user = JSON.parse(user)
+  saludoElement.textContent = `Bienvenido: ${user.email}`;
   header.appendChild(saludoElement);
   header.appendChild(logoutLink);
 
