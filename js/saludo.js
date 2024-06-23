@@ -5,11 +5,12 @@ let user = localStorage.getItem('user');
 let header = document.querySelector('.header');
 console.log(header);
 let loginnav = document.querySelector('#login');
-let registernav = document.querySelector('#register');
+let registernav = document.querySelector('#registro');
 
 // Crear elementos de saludo y logout
 let saludoElement = document.createElement('span');
-let logoutLink = document.createElement('button');
+let logoutLink = document.createElement('a');
+logoutLink.href = '#';
 logoutLink.textContent = 'Logout';
 
 // Función para manejar el logout
@@ -36,6 +37,7 @@ if (user) {
   // Ocultar elementos de login y registro
   if (loginnav) loginnav.style.display = 'none';
   if (registernav) registernav.style.display = 'none';
+  console.log(registernav);
 }
 
 // Agregar evento para que el código se ejecute cuando el DOM esté listo
