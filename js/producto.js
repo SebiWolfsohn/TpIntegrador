@@ -23,6 +23,7 @@ fetch(url)
     document.getElementById("addCarrito").addEventListener("click", function() {
       let cart = JSON.parse(localStorage.getItem('cart')) || []
       cart.push(id)
+      localStorage.setItem('cart', JSON.stringify(cart))
       console.log(cart);
       window.location.href = 'cart.html';
     })
