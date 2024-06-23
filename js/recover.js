@@ -4,10 +4,9 @@ let erroremail = document.querySelector('.mensajeEmail');
 let checkbox = document.querySelector('#checkbox'); 
 let errorcheckbox = document.querySelector('.mensajeCheckbox');
 let errorForms = document.querySelector('.errorForms')
-let form = document.querySelector('#forms');
 let user = {}
 
-linkLogin.style.display = 'none';
+//linkLogin.style.display = 'none';
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -29,7 +28,7 @@ form.addEventListener('submit', function (e) {
         errorcheckbox.style.display = 'none';
     }
 
-    if (isValid) {
+    if (!forms.value) {
         form.style.display = 'none';
         user.email = email.value;
         user.checkbox = checkbox.checked;
