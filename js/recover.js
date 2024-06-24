@@ -1,43 +1,35 @@
-let form = document.querySelector('#forms');
-let email = document.querySelector('.email');
-let erroremail = document.querySelector('.mensajeEmail');
-let checkbox = document.querySelector('#checkbox'); 
-let errorcheckbox = document.querySelector('.mensajeCheckbox');
-let errorForms = document.querySelector('.errorForms')
-let respuestaFinal = document.querySelector ('.respuestaFinal');
-let linkLogin = document.querySelector('.linkLogin');
-let user = {}
+document.addEventListener('DOMContentLoaded', function() {
+    let form = document.querySelector('#form');
+    let email = document.querySelector('#email');
+    let erroremail = document.querySelector('.invalid-feedback.email');
+    let checkbox = document.querySelector('#checkbox'); 
+    let errorcheckbox = document.querySelector('.invalid-feedback.checkbox');
+    let respuestaFinal = document.querySelector ('#respuestaFinal');
+    let linkLogin = document.querySelector('#linkLogin');
 
-//linkLogin.style.display = 'none';
-
-form.addEventListener('submit', function (e) {
+ form.addEventListener('submit', function (e) {
     e.preventDefault();
-    let isValid = true;
- 
+    erroremail.style.display = 'none';
+    errorcheckbox.style.display = 'none';
+    respuestaFinal.textContent = '';
+    linkLogin.style.display = 'none';
+    let respuesta = true;
     if (email.value == '' || email.value.length < 7){
-        erroremail.innerText = 'Porfavor escriba su mail'
+        erroremail.innerText = 'Por favor escriba su mail'
         erroremail.style.display = 'block';
-        isValid = false;
-    } else {
-        errorcheckbox.style.display = 'none';
-
-    } if (!checkbox.checked){
-        errorcheckbox.innerHTML = 'Por favor acepte el campo Quiero recuperar mi contraseña'
+        respuesta = false;
+    } 
+    else if (!checkbox.checked){
+        errorcheckbox.innerText = 'Por favor acepte el campo Quiero recuperar mi contraseña'
         errorcheckbox.style.display = 'block';
-        isValid = false
-    } else {
-        errorcheckbox.style.display = 'none';    
-    }
-
-    if (isValid.value) {
-        form.style.display = 'none';
-        user.email = email.value;
-        user.checkbox = checkbox.checked;
-        localStorage.setItem('user', JSON.stringify(user));
+        respuesta = false;
+    } 
+    if (respuesta) {
         respuestaFinal.innerText = 'Recibirás un email con las instrucciones para recuperar tu contraseña';
-        respuestaFinal.style.display = 'block';
         linkLogin.style.display = 'block';
-        form.reset();
-    }
-    
+        let user = {};
+         user.email = email.value;
+         user.checkbox = checkbox.value;
+    } localStorage.setItem('user', JSON.stringify(user))
+    });
 });

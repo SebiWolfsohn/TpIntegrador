@@ -79,6 +79,11 @@ li{
     
 }
 
+.invalid-feedback {
+    color: red;
+    display: none;
+}
+
 label{
     align-items: center;
     justify-content: center;

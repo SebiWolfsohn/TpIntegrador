@@ -29,15 +29,19 @@
         </header>
 <h1>Recupero Contraseña</h1>
 <article id="forms">
-    <form action="method">
+    <form id="form">
         <p>Email</p>
-        <input class="email" type="email" name="emailRecover" value="">
-        <p class="mensajeEmail"></p>
-        <label for="form">Quiero recuperar mi contraseña</label>
+        <input id="email" class="email" type="email" name="emailRecover" value="">
+        <p class="invalid-feedback email"></p>
+        <label for="checkbox">Quiero recuperar mi contraseña</label>
         <input class="checkbox" type="checkbox" name="recover" value="1">
-        <div class="mensajeCheckbox"></div>
+        <p class="invalid-feedback checkbox"></p>
         <button type="submit" class="errorForms">Recuperar</button>
     </form>
+    <div id="respuestaFinal"></div>
+    <div id="linkLogin" style="display: none;">
+        <a href="./login.html">Ir al login</a>
+    </div>
 </div>
 </div>
 </main>
