@@ -17,8 +17,8 @@
                 <li> <a href="./categoria.html?categoria=men's clothing" class="nav">Hombre</a></li>
                 <li> <a href="./categoria.html?categoria=women's clothing" class="nav">Mujer</a></li>
                 <li> <a href="./cart.html" class="nav">Carrito</a></li>
-                <li> <a href="./login.html" class="nav">Login</a></li>
-                <li> <a href="./register.html" class="nav">Registro</a></li>
+                <li> <a href="./login.html" class="nav" id="login">Login</a></li>
+                <li> <a href="./register.html" class="nav" id="registro">Registro</a></li>
             </ul>
         </nav>
         
@@ -28,24 +28,20 @@
             
         </header>
 <h1>Recupero Contraseña</h1>
-<main>
-    <div class="container-formulario">
-        <div class="formulario">
-
-    <form id="forms" action="#" method="post">
-        <h3> Quiero recuperar mi contraseña</h3>
-        <label for="email">Ingrese su email
-            <input class="campos email" type="email" id= "email" name="email" >
-        </label>
-        <p class="mensajeEmail error"></p>
-        <label for="checkbox">Quiero recuperar mi contraseña
-          <input type="checkbox" class="checkbox" id="checkbox" name="recuperar">
-        </label>
-        <p class="mensajeCheckbox error"></p>
-        <button type="submit" value="recuperar">Recuperar</button>
-        <p class="error Forms respuestaFinal"></p>
-        <a class="linkLogin" href="./login.html">Ir a login</a>
+<article id="forms">
+    <form id="form">
+        <p>Email</p>
+        <input id="email" class="email" type="email" name="emailRecover" value="">
+        <p class="invalid-feedback email"></p>
+        <label for="checkbox">Quiero recuperar mi contraseña</label>
+        <input id="checkbox" class="checkbox" type="checkbox" name="recover" value="1">
+        <p class="invalid-feedback checkbox"></p>
+        <button type="submit" class="errorForms">Recuperar</button>
     </form>
+    <div id="respuestaFinal"></div>
+    <div id="linkLogin" style="display: none;">
+        <a href="./login.html">Ir al login</a>
+    </div>
 </div>
 </div>
 </main>

@@ -5,7 +5,7 @@ let login = document.querySelector('login');
 let registro = document.querySelector('registro');
 
 function logoutFuncion() {
-    localStorage.removeItem('usuarioEmail')
+    localStorage.removeItem('user')
     bienvenido.style.display = 'none'; 
     logout.style.display = 'none';
     login.style.display = 'block';

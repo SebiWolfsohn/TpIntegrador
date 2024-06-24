@@ -20,6 +20,7 @@ form.addEventListener('submit', function (e){
        user.password = password.value;
        localStorage.setItem('user', JSON.stringify(user))
    this.submit();
+     location.href = './index.html'
    }
 }
 )  

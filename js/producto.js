@@ -19,28 +19,17 @@ fetch(url)
             <button id="addCarrito">Añadir al carrito</button>
         </article>`;
     console.log(element);
+
+    document.getElementById("addCarrito").addEventListener("click", function() {
+      let cart = JSON.parse(localStorage.getItem('cart')) || []
+      cart.push(id)
+      localStorage.setItem('cart', JSON.stringify(cart))
+      console.log(cart);
+      window.location.href = 'cart.html';
+    })
   })
   
   .catch(function (error) {
     console.log("Error: " + error);
   })
-
-  document.getproducto("addCarrito").addEventListener("click", function() {
-    addToCart(element);
-    console.log(element);
-   })
-
-  if (sessionStorage.getItem('addCarrito')) {
-		cartArray = JSON.parse(sessionStorage.getItem('addCarrito'));
-	}
-  
-  document.getElementById("addCarrito").addEventListener("click", redirect);{
-   function redirect(){ window.location.href = 'cart.html'; }
-  }
-
-  
-
-
-
-
 

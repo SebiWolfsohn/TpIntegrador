@@ -28,7 +28,7 @@ fetch(url)
             </div>
         </article>`;
     }
-    productos.innerHTML = html;
+    productos.innerHTML = articulo;
     console.log(data);
   })
   .catch(function (error) {

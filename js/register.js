@@ -7,7 +7,6 @@ let erroremail = document.querySelector('.invalid-feedback.email');
 let errorpassword = document.querySelector('.invalid-feedback.password');
 let errorrePassword = document.querySelector('.invalid-feedback.rePassword');
 let errorterminosYcondiciones = document.querySelector('.invalid-feedback.terminosYcondiciones');
-let user = {}
 
 form.addEventListener('submit', function (e){
     e.preventDefault();
@@ -36,6 +35,7 @@ form.addEventListener('submit', function (e){
         errorterminosYcondiciones.style.display = 'block';
    
     } else {
+        let user = {}
         user.email = email.value;
         user.password = password.value;
         user.rePassword = rePassword.value;
